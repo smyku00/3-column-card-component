@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+button {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.btn {
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+#container {
+    padding: 20px;
+}
+
+.card1 {
+    background-color: var(--bright-orange);
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 30px;
+}
+
+.card1 .btn {
+    color: var(--bright-orange);
+}
+
+.card2 {
+    background-color: var(--dark-cyan);
+    color: #fff;
+    padding: 30px;
+}
+
+.card2 .btn {
+    color: var(--dark-cyan);
+}
+
+.card3 {
+    background-color: var(--very-dark-cyan);
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    padding: 30px;
+}
+
+.card3 .btn {
+    color: var(--very-dark-cyan);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.card img {
+    margin-bottom: 25px;
+}
+
+.card h1 {
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+    #container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .card1 {
+        border-radius: 10px 0 0 10px;
+        padding: 40px;
+        height: 450px;
+    }
+
+    .card2 {
+        padding: 40px;
+        height: 450px;
+    }
+
+    .card3 {
+        border-radius: 0 10px 10px 0;
+        padding: 40px;
+        height: 450px;
+    }
+
+    .card p {
+        margin-bottom: 50px;
+    }
+}
+
